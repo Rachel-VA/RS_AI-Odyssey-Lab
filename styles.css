@@ -1,0 +1,271 @@
+/*general default for the html body*/
+body{
+    /*background image*/
+    /*background-image: url('bg.jpg');*/
+    margin:0;
+    padding:0;
+    background-color: black;
+
+}
+
+/*style the nav bar*/
+.navbar{
+    background-color: black;
+    color:brown;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 20px;
+
+}
+/*style the logo*/
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border-color: rgb(231, 191, 10);
+    border-style:double;
+    
+}
+
+/*style the nav link buttons*/
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+/*style the link list*/
+.nav-links li{
+    margin-right:10px;
+
+}
+
+/*style the anchor a hyperlinks */
+.nav-links a {
+    text-decoration: none;
+    color:rgb(235, 137, 8);
+    font-family: fantasy;
+}
+
+/*style for hero-section*/
+.hero-section{
+    background-image: url('IMG/bgCastle.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    
+}
+
+/*style for hero-content*/
+.hero-content{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+/**/
+
+/*style the header section*/
+.intro-text{
+    text-align:center;
+    padding:2px;
+    color: rgb(239, 183, 17);
+    margin-right: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.introduction-p h3{
+    text-align: center;
+    color: rgb(235, 105, 12);
+}
+
+h3{
+    color: #d75c5c;
+    margin-left: 50px;
+}
+
+
+/*style the introduction paragraph*/
+.introduction-p{
+    text-align: justify;
+    margin:10px;
+    line-height: 1.5;
+    text-align: justify;
+    color: rgb(228, 166, 11);
+}
+
+
+
+/*style the video*/
+video{
+    width: 100%;
+    max-width: 400px; /*set width size max*/
+    height: auto; /*keep heigh ratio*/
+}
+
+.video-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.video-controls{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Style the video buttons */
+button {
+    padding: 10px 20px;
+    background-color: #7da7c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+/* Style the video buttons hover */
+button:hover {
+    background-color: #f4c60e;
+}
+
+
+
+/*style the main section side by side with grid*/
+.main-content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    margin:0;
+
+}
+/*style the right section for images*/
+.right-section img{
+    max-width: 70%;
+    height:auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/*style the images in the grid: left section*/
+.image-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    max-width:100%;
+    height:auto;
+    object-fit: cover;
+    gap:10px;
+}
+.image-grid img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin:10px;
+}
+
+/*style for the View more and Read more buttons*/
+/* Style for the View more and Read more buttons */
+.view-more-button, .read-more-button {
+    display: block; /* Change to block level to control width */
+    margin-top: 10px; /* Add some space between buttons */
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 166);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Center the text within buttons */
+    width: 100px; /* Set a fixed width for the buttons */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/*create hover for the buttons*/
+.view-more-button:hover, .read-more-button:hover{
+    background-color: rgb(199, 17, 17);
+
+}
+
+/* Position the right section in the second column */
+.right-section {
+    grid-column: 2 / 3;
+}
+
+/*move the buttons center*/
+.left-section, .right-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*style the level 2 header for the left section*/
+.left-section h2{
+    color: rgb(78, 73, 183);
+}
+/*style the level 2 header for the right section*/
+.right-section h2{
+    color: rgba(246, 233, 233, 0.667);
+}
+
+.right-section p{
+    color: rgba(223, 230, 226, 0.719);
+    margin: 10px;
+}
+/*style the Read more button*/
+.read-more-button{
+    background-color: grey;
+    color: rgb(237, 167, 144);
+    font-weight: bold;
+}
+
+/*style the view more button*/
+.view-more-button{
+    background-color: rgba(85, 83, 199, 0.71);
+    color: rgb(189, 118, 26);
+    font-weight: bold;
+}
+
+
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for the footer content */
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex; /*use flexbox to control the content side by side*/
+    justify-content: space-between;
+}
+
+/* Style for the copyright text */
+.copyright {
+    flex-grow: 1; /* Allow it to grow/take available space */
+    text-align: left;
+}
+
+/* Style for the contact info */
+.contact {
+    flex-shrink: 1; /* Allow it to shrink/not take more space than necessary */
+    text-align: right;
+}
+
+/* Style for the email link in the footer */
+.footer-content a {
+    color: #ff9900; 
+    text-decoration: none; 
+}
+
+/* Add hover color for the email link */
+.footer-content a:hover {
+    color: #00ff2a; 
+}

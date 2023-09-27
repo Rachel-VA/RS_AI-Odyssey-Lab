@@ -1,0 +1,180 @@
+/*general default for the html body*/
+body{
+    /*background image*/
+    /*background-image: url('bg.jpg');*/
+    margin:0;
+    padding:0;
+    background-color: black;
+
+}
+
+/*style the nav bar*/
+.navbar{
+    background-color: black;
+    color:rgba(65, 7, 7, 0.402);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 20px;
+
+}
+/*style the logo*/
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border-color: rgba(203, 20, 20, 0.517);
+    border-style:double;
+    
+}
+
+/*style the nav link buttons*/
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+/*style the link list*/
+.nav-links li{
+    margin-right:10px;
+
+}
+
+/*style the anchor a hyperlinks */
+.nav-links a {
+    text-decoration: none;
+    color:rgb(192, 79, 79);
+    font-family: fantasy;
+}
+
+/*style the header section*/
+.intro-text{
+    text-align:center;
+    padding:20px;
+    background-color: black;
+    color: rgba(174, 83, 83, 0.869);
+}
+
+/*style the introduction paragraph*/
+.intro-text p{
+    text-align: center;
+    margin:0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*style the introduction paragraph*/
+.intro-text p{
+    text-align: center;
+    margin:0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*Style image-grid*/
+.image-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+/*style the image class*/
+.image{
+    position:relative;
+}
+.hidden{
+    display:none;
+}
+/* mass style for the images display*/
+.image img{
+    max-width:100%;
+    height: auto;
+    cursor: pointer;
+
+}
+/*style image description*/
+.image p{
+    text-align: center;
+}
+
+/*style for images when  display large*/
+#large-image-container{ /*call the div id*/
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /*pop the image up above other content*/
+
+}
+
+/*style the large img id*/
+#Larger-image{
+    max-width:100%;
+    max-height: 100%;
+}
+/*style the button id*/
+#close-button{
+    position:absolute;
+    top:10px;
+    right: 10px;
+    cursor:pointer;
+    color:chocolate;
+    font-size: 24px;
+}
+
+/*image title*/
+.image h3{
+    color: chocolate;
+    text-align: center;
+}
+/*style for class image p tag*/
+.image p{
+    color:rgba(209, 139, 59, 0.836);
+    margin:0 auto;
+    padding: 0;
+    text-align: justify;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the footer content container */
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex; /* Use flexbox to arrange content side by side */
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Style for the copyright text */
+.copyright {
+    flex-grow: 1; /* Allow it to grow and take available space */
+    text-align: left;
+}
+
+/* Style for the contact information */
+.contact {
+    flex-shrink: 1; /* Allow it to shrink and not take more space than necessary */
+    text-align: right;
+}
+
+/* Style for the email link in the footer */
+.footer-content a {
+    color: #ff9900; 
+    text-decoration: none; 
+}
+
+/* Add hover color for the email link */
+.footer-content a:hover {
+    color: #00ff44; 
+}

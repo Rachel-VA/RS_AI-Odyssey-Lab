@@ -1,0 +1,144 @@
+/*general default for the html body*/
+body{
+    /*background image*/
+    /*background-image: url('bg.jpg');*/
+    margin:0;
+    padding:0;
+    background-color: black;
+
+}
+
+/*style the nav bar*/
+.navbar{
+    background-color: black;
+
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 20px;
+
+}
+/*style the logo*/
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border-color: rgba(178, 147, 209, 0.597);
+    border-style:double;
+    
+}
+
+/*style the nav link buttons*/
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+    
+}
+/*style the link list*/
+.nav-links li{
+    margin-right:10px;
+
+}
+
+/*style the anchor a hyperlinks */
+.nav-links a {
+    text-decoration: none;
+    color:rgba(150, 120, 203, 0.804);
+    font-family: fantasy;
+}
+
+/*style the header section*/
+.intro-text{
+    text-align:center;
+    padding:20px;
+    background-color: black;
+    color: rgb(127, 93, 189);
+}
+
+/*style the introduction paragraph*/
+.intro-text p{
+    text-align: center;
+    margin:0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+
+/*style the main conten*/
+main{
+    max-width:800px; /*set the maximum width of the main element*/
+    margin:0 auto; /*centers the main element horizontally on the page*/
+    padding:20px; /*add space around*/
+}
+
+/*style the story cards*/
+/*use a dot to select a class that we want to style*/
+.story-card {
+    background-color: rgb(27, 23, 27); /*dark grey*/
+    margin-bottom:20px; /*add space from the bottom*/
+    padding:20px; /*add space around each story*/
+    border-radius:2px;   /*round the corners*/
+}
+
+/*style the images*/
+.story-card img{
+    max-width:100%; /*set the max width for images BUT not eceed the story card element, maintain responsive*/
+    height:auto;/*preserve the images aspect ratio*/
+    border-radius:5px; /*create a border around the images*/
+    
+}
+
+/*style for the story title level 2 heading*/
+h2{
+    font-size: 24px;
+    color:#7707ed;
+    text-align: center;
+}
+
+/*style for paragraph text*/
+p{
+    font-size: 16px;
+    color:dimgrey;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #383636;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the footer content container */
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex; /* Use flexbox to arrange content side by side */
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Style for the copyright text */
+.copyright {
+    flex-grow: 1; /* Allow it to grow and take available space */
+    text-align: left;
+    color: #6c6868;
+}
+
+/* Style for the contact information */
+.contact {
+    flex-shrink: 1; /* Allow it to shrink and not take more space than necessary */
+    text-align: right;   
+}
+
+/* Style for the email link in the footer */
+.footer-content a {
+    color: #ff9900; 
+    text-decoration: none; 
+}
+
+/* Add hover color for the email link  */
+.footer-content a:hover {
+    color: #00ff2f; /* Change to the desired hover color */
+}

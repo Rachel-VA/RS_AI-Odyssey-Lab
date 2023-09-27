@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Odyssey Lab</title>
+     <!--link css file-->
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!--nav bar-->
+        <nav class="navbar">
+        <!--logo-->
+        <div class="logo">
+            <img src="IMG/CrocLogo.png" alt="Logo">
+        </div>
+        <!--link button-->
+        <ul class="nav-links">
+            <li><a href="image.html">Image Gallergy</a></li>
+            <li><a href="story.html">Dark Stories</a></li>
+        </ul>
+    </nav>
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="intro-text">
+                <h1>WELCOME TO AI ODYSSEY LAB</h1>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="introduction-p">
+        <h3>Embark on an Unforforgetable Mysterious Journey Through AI Odyssey</h3>
+        <p>
+            Welcome to AI Odyssey Lab, the gateway to a world where machines breathe life into imagination. 
+            Dive headfirst into the enigmatic realm of artificial intelligence, where mysteries wait to be unraveled, creativity knows no bounds, and innovation becomes an art form. 
+            Our digital voyage promises to spark your curiosity, ignite your imagination, and redefine your perception of what's possible. 
+            Join us as we embark on a quest to explore the limitless horizons of AI, where the journey is as thrilling as the destination.
+        </p>
+
+    </div>
+    
+    </header>
+    <h3>Background sound</h3>
+    <!--adding a sound file background-->
+    <audio id="backgroundAudio" controls autoplay>
+        <source src="IMG/horror.mp3" type="audio/mpeg">
+        <source src="IMG/ghostWishper.mp3" type="audio/mpeg">
+        <source src="IMG/creepy.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <br><br>
+    <!--create a section to play a video-->
+    <section class="video-section">
+        <video id="myVideo">
+            <source src="IMG/clone.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+    </section>
+
+
+    <br> <br>
+    <!----create section container for the main section which devides into left and right-->
+    <section class="main-content">
+        <!-- Left section to display feature images-->
+        <div class="left-section">
+            <h2>AI generated Images</h2>
+            <!--create a div class container to display images -->
+            <div class="image-grid">
+                <img src="IMG/femaleSnake.jpg" alt="Image 1">
+                <img src="IMG/dracular.jpg" alt="Image 2">
+                <img src="IMG/monster2.jpg" alt="Image 4">
+                <img src="IMG/monster4.jpg" alt="Image 6">
+            </div>
+            <!--view more button-->
+            <a href="Image.html" class="view-more-button">View More</a>   
+        </div>
+
+        <!--Right section for preview dark story-->
+        <div class="right-section">
+            <h2>Whispers from the Abyss</h2>
+            <img src="IMG/man.jpg" alt="Dark Story Image">
+            <p>
+                Deep within the heart of the eerie and desolate Blackwood Manor, a chilling secret lay hidden for centuries. 
+                The mansion, engulfed in ominous mist and enveloped by gnarled trees, stood as a dark sentinel of times long past.
+                Its very presence sent shivers down the spines of those who dared to venture near.
+                For generations, tales of the mansion had been whispered in hushed tones, passed down through a lineage that knew not to tread too close to its sinister gates.
+                They spoke of an unholy presence that inhabited the shadows, a malevolent force that craved company in the abyss.
+                As night descended, the air thickened with dread, and the walls of Blackwood Manor seemed to pulse with a sinister life of their own. 
+                Unseen eyes watched from the darkness, and an icy breath brushed against the nape of your neck, sending your heart racing.
+                It was said that once you entered the mansion, you became forever entwined with its sinister history. 
+                Desperate souls who dared to cross the threshold soon found themselves ensnared in a nightmarish realm where reality and illusion twisted and melded together.
+                Now, as you stand at the mansion's entrance, the weight of its history bears down upon you.
+                Are you brave enough to step inside, to unravel the mysteries that lie within, or will you become just another haunting shadow in the never-ending nightmare of Blackwood Manor?
+                As you ventured deeper into the mansion, strange occurrences became more frequent. 
+                Whispered voices danced on the edges of your consciousness, and ghostly figures seemed to materialize, only to vanish when you blinked.
+                 Each step forward felt like a descent into madness.
+                In a forgotten chamber, you discovered an ancient diary, its pages filled with cryptic entries and desperate pleas for release. 
+                It spoke of a curse that bound the souls of the mansion's former residents to a never-ending purgatory, their torment fueled by the dark secrets they took to their graves.
+
+                With every passing hour, the boundary between reality and the supernatural blurred further. 
+                The walls seemed to close in, and your own reflection in the cracked mirrors bore a sinister, mocking grin. It was as if the mansion itself sought to consume your very soul.
+
+                As the night wore on, the horrors intensified. Phantom footsteps echoed in empty corridors, and spectral hands reached out from the shadows, their grip icy and insistent.
+                You couldn't escape the feeling that the malevolent force that dwelled here hungered for something—perhaps your own soul to add to its collection.
+                <br><br>
+                In "Whispers from the Abyss," you'll be plunged into a chilling world of spectral horrors, where the line between the living and the dead blurs into oblivion.
+                Can you uncover the truth behind the mansion's curse, or will you become another lost soul, forever trapped in its nightmarish embrace? The choice is yours, but be warned—the price of curiosity may be steeper than you can imagine.
+                                
+
+                
+            </p>
+            <!--a read more button-->
+            <a href="Story.html" class="read-more-button">Read More</a>
+        </div>
+    </section>
+    <br><br> <!--skip lines-->
+    <footer>
+        
+        <div class="footer-content">
+            <p class="copyright">&copy; 2023 AI Odyssey Lab. All rights reserved.</p>
+            <p class="contect">Contact us: <a href="mailto:contact@aiodysseylab.com">contact@aiodysseylab.com</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="video.js"></script>
+</body>
+</html>
